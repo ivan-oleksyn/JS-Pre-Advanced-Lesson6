@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eeecec;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    margin: 100px auto;
+    width: 80%;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.first-name-wrapper,
+.last-name-wrapper,
+.email-wrapper,
+.password-wrapper {
+    position: relative;
+
+}
+
+.sign-up,
+.sign-in,
+.profile {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 20px auto;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.input:focus {
+    outline: #71b3fa;
+    border: 1px solid #78b1f1;
+    box-shadow: 0 0 0 4px rgba(2, 124, 255, 0.247);
+}
+
+.error {
+    width: 70%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    background: #f73e3e;
+    color: #fefefe;
+    font-size: 15px;
+    border-radius: 3px;
+    padding: 0 10px;
+    position: absolute;
+    top: 60px;
+}
+
+.error-icon,
+.valid-icon {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+
+}
+
+.error-icon-fn,
+.error-icon-ln,
+.error-icon-email,
+.error-icon-pass {
+    background: url('./icons/close.svg');
+    background-size: cover;
+}
+
+.valid-icon-fn,
+.valid-icon-ln,
+.valid-icon-email,
+.valid-icon-pass {
+    width: 15px;
+    height: 15px;
+    background: url('./icons/check.svg');
+    background-size: cover;
+}
+
+.sign-up-button,
+.sign-in-button,
+.profile-button {
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+    color: #fefefe;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background: #3a87fc;
+}
+
+.sign-up-button:hover,
+.sign-in-button:hover,
+.profile-button:hover {
+    cursor: pointer;
+}
+
+.link-to-sign-in {
+    text-decoration: none;
+    color: #3a87fc;
+}
+
+.link-to-sign-in:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.error-sign-in-password {
+    height: 40px;
+    margin-top: 2px;
+    font-size: 15px;
+}
+
+.sign-in-button {
+    background-color: #04b104;
+}
+
+.profile {
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 50px 0 0;
+}
+
+.profile-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: url('./BackGround/joueur.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profile-title {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.profile-email,
+.profile-position {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #afaeae;
+}
+
+.profile-line {
+    width: 100px;
+    height: 2px;
+    background-color: #afaeae;
+    margin-top: 25px;
+}
+
+.profile-button {
+    background-color: #04b104;
+    margin: 30px auto 0;
+}
+
+.profile-link {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+/* Moving placeholder */
+input:focus~.floating-label,
+input:not(:focus):valid~.floating-label {
+    top: 8px;
+    bottom: 10px;
+    left: 20px;
+    font-size: 13px;
+    opacity: 1;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 20px;
+    top: 18px;
+    transition: 0.2s ease all;
+    color: #727272;
+    font-size: 17px;
+}
+
+.border {
+    border: 2px solid #02a702;
+}
+
+.border-error {
+    border: 2px solid #fa1d1d;
+}
+
+.hide {
+    display: none;
+}
+
+.uc-first {
+    text-transform: capitalize;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <h2 class="title">Please sign in</h2>
+            <form action="" class="sign-in" name="signIn">
+                <div class="email-wrapper">
+                    <input type="text" class="email sign-in-email input" required="required">
+                    <span class="floating-label">Email address</span>
+                </div>
+                <div class="password-wrapper">
+                    <input type="password" class="password input sign-in-password" required="required">
+                    <span class="floating-label">Password</span>
+                    <div class="error error-sign-in-password hide">Incorrect email or password</div>
+                </div>
+                <input type="button" value="Sign In" class="sign-in-button">
+                <a href="index.html" class="link-to-sign-in">Sign up now</a>
+            </form>
+        </div>
+        <div class="profile hide">
+            <div class="profile-icon"></div>
+            <h2 class="profile-title"></h2>
+            <div class="profile-email"></div>
+            <div class="profile-position">Designer & Web Developing</div>
+            <div class="profile-line"></div>
+
+            <button class="profile-button">Sign Out</button>
+        </div>
+    </div>
+    <script src="./signin.js"></script>
+</body>
+
+</html>

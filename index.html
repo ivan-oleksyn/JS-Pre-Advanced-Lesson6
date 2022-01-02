@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Please sign up</h2>
+        <form action="#" class="sign-up" name="signUp">
+            <div class="first-name-wrapper">
+                <input type="text" class="first-name input" required="required" data-value="">
+                <span class="floating-label">First name</span>
+                <div class="error-icon-fn error-icon hide"></div>
+                <div class="valid-icon-fn valid-icon hide"></div>
+            </div>
+            <div class="last-name-wrapper">
+                <input type="text" class="last-name input" required="required" data-value="">
+                <span class="floating-label">Last name</span>
+                <div class="error-icon-ln error-icon hide"></div>
+                <div class="valid-icon-ln valid-icon hide"></div>
+            </div>
+            <div class="email-wrapper">
+                <input type="text" class="email input" required="required" data-value="">
+                <span class="floating-label">Email address</span>
+                <div class="error-icon-email error-icon hide"></div>
+                <div class="valid-icon-email valid-icon hide"></div>
+                <div class="error error-email hide">This email already exist</div>
+            </div>
+            <div class="password-wrapper">
+                <input type="password" class="password input" required="required" data-value="">
+                <span class="floating-label">Password</span>
+                <div class="error-icon-pass error-icon hide"></div>
+                <div class="valid-icon-pass valid-icon hide"></div>
+                <div class="error error-password hide">This password already exist</div>
+            </div>
+            <input type="button" value="Sign Up" class="sign-up-button">
+            <a href="signin.html" class="link-to-sign-in">Sign In now</a>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
